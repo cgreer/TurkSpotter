@@ -1,0 +1,38 @@
+// ==UserScript==
+// @name       HitSpotter
+// @namespace  HitSpotter
+// @version    0.1
+// @description  Check for new hits automatically
+// @include    http://www.reddit.com/r/HITsWorthTurkingFor/new/?sort=new
+// @copyright  2011+, You
+// @require  http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+// ==/UserScript==
+
+function check_all_titles(){
+    //TODO: monitor if auction has ended and filter out [CHECK]
+    
+    //get current info for all auctions on page
+    var allTitles = $('.title > a');
+    
+    allTitleText = [];
+    for (var i = 0; i< allTitles.length; i++){
+        getText = $(allTitles[i]).text();
+        allTitleText.push(getText);
+    }
+    
+    console.log(allTitleText);
+                          
+    $.post("http://localhost:8060/cgi-bin/index.py", {tText: allTitleText});
+    
+}
+
+$(document).ready(function(){
+   
+    console.log('hello');
+    check_all_titles();
+    
+    //extract auction information every interval
+    //setInterval(function(){check_all_auctions()}, 100); // 5th of a second
+    setTimeout(function(){window.location.reload(true)}, 20 * 1000); //1 minute
+    
+});
