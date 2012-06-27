@@ -33,6 +33,6 @@ $(document).ready(function(){
     
     //extract auction information every interval
     //setInterval(function(){check_all_auctions()}, 100); // 5th of a second
-    setTimeout(function(){window.location.reload(true)}, 20 * 1000); //1 minute
+    setTimeout(function(){window.location.reload(true)}, 15 * 1000); //seconds til refresh
     
 });
