@@ -172,3 +172,30 @@ US University of Pennsylvania Ph.D. Research - Answer a short survey about recei
 US - Short & Fun Research Survey on Everyday Products - Adina Barbulescu Robinson - .50/5-6 min - >97%
 U.S - Grand Juror Study - Jennifer Ray -$.30/ 4-5mins HIT approval rate > 97
 US - Short & Fun Research Survey on Everyday Products - Adina Barbulescu Robinson - $.50/7min - >95%
+US - Watch a short clip and answer questions - Nadav Klien - .25/4mins - >95
+US - Language Experiment from Brown University - kertzlab - 1.25/10-12 min - >1000 approved, >95%
+US - Short First Impressions Survey - Pamela K Smith - .50/3 min - >95%
+US - Social Psychology Resarch Study (5-10 minutes for $0.75) - Stanford OB Researcher -.75/6 min - >95%
+US-Do a Google Search For "John Cioffoletti red bank" and copy the first line of text you see after you click the 1st result.- der - .10/10sec ->95%
+US - Answer an Important Survey about News - Vanessa Cruz - $.80/15mins - >90%
+US - Study for Harvard University - Trisha Shrum - .60/4 mins - >95% Approval
+US - research study on product evaluation - cheryl wakslak - .50/4min - >95%
+US Participate in a short research study - Emily Chan - .75/5 min - >50 >95%
+ICA - Show where you would click - click test - Jill Christ - $0.2/40 secs - >95
+US-An 8-min short survey: University of Massachusetts-Xie Lab-$.5/2min->98%
+US - Share your thoughts on micro-volunteering, for research (Only an essay) - Persimmon - $.25 (2x bonus potential)/2 minutes, 100 words - >90%
+US - Survey on Current Events and Public Affairs - Daniel Biggers - $0.50/2mins - > 95% approval
+ICA - Sentence Completion Questions - CrowdFlower - $.50 / 1-2min
+US-Simple Multitasking Game-Emotive Computing-$1.25/15min->0>95%
+US - Personality and Current Events, for research - Requester: - $0.50/6 min - (>97%)
+US 5-7min survey rating how much different types of experts can contribute to three topics-Facilitator for Study-$.40/4min->1000>95%
+US - Quick survey - dukexphi - $.10/1 minute - >80%
+US - Answer a really quick survey to help us name our web application - Lior Grossman - .15/1 min
+US - 2-minute survey (Shopping)- Sean - $.25/2- minutes - >95%
+ICA - Short survey of 6 questions on buying behavior - The Market Researcher - 0.10/1 min
+ICA - Consumer Choice at different stock-level Survey (4) - Yongfu He - .55/4 min ->1000 >95%
+US Please complete a study about restaurant menu opinions. - Ryan Rahinel - $0.25/2min - >95%
+US - Answer a short survey about consumer behavior - Sarit Moldovan - $0.50/2 min - (>95%)
+ICA-Identity Survey for 18 to 40 year olds-Crowdflower-$.50/5min-No other quals
+ICA - Personality Correlates of Belief - Kristen M. Eyssell - 0.30/4-5min - >95
+US - Participate in Brief Survey About Insurance: less than 5 minutes. - Experiments in Economics - $0.51/5min - (>95%)

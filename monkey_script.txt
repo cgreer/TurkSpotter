@@ -4,35 +4,33 @@
 // @version    0.1
 // @description  Check for new hits automatically
 // @include    http://www.reddit.com/r/HITsWorthTurkingFor/new/?sort=new
-// @copyright  2011+, You
+// @copyright  2012, Chris Greer
 // @require  http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
 // ==/UserScript==
 
 function check_all_titles(){
-    //TODO: monitor if auction has ended and filter out [CHECK]
-    
-    //get current info for all auctions on page
+
+    //Title names under a element of title class
     var allTitles = $('.title > a');
-    
+   
+    //TODO, get public underscore.js for list comp
     allTitleText = [];
     for (var i = 0; i< allTitles.length; i++){
         getText = $(allTitles[i]).text();
         allTitleText.push(getText);
     }
     
-    console.log(allTitleText);
-                          
+    //console.log(allTitleText);
     $.post("http://localhost:8060/cgi-bin/index.py", {tText: allTitleText});
     
 }
 
 $(document).ready(function(){
-   
-    console.log('hello');
+  
+    // parse all titles in subreddit, post them to server
     check_all_titles();
     
-    //extract auction information every interval
-    //setInterval(function(){check_all_auctions()}, 100); // 5th of a second
-    setTimeout(function(){window.location.reload(true)}, 15 * 1000); //seconds til refresh
+    // refresh every 15 seconds (play nice! Don't spam reddit please!) 
+    setTimeout(function(){window.location.reload(true)}, 30 * 1000); //seconds til refresh
     
 });

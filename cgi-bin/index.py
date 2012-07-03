@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 import cgi
 
-log = open('log.txt', 'w')
+#log = open('log.txt', 'w')
 
 
 #get current titles
 myData = cgi.FieldStorage()
 aData = myData['tText[]']
 tTitles = [fStorage.value for fStorage in aData]
-
 
 newTitles = []
 with open('titles.txt', 'r') as tFile:
@@ -24,9 +23,7 @@ with open('titles.txt', 'a') as tFile:
     [tFile.write(x + '\n') for x in newTitles]
             
 
-log.write(str(tTitles) + '\n')
 
-log.close()
      
 
 print "Content-type: text/html"

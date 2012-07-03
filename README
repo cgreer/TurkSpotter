@@ -1,0 +1,30 @@
+
+OVERVIEW:
+  1) Chrome Tampermonkey script scrapes http://www.reddit.com/r/HITsWorthTurkingFor/new/?sort=new every 30s for new titles and sends them to a local server
+  2) local cgi script parses titles sent every 30 seconds and writes ONLY new titles to titles.txt
+  3) "./watcher.sh" uses inotifywait (bash) to check if titles changes
+  4) IF titles.txt changes, sox (play) will play a synthesized G1 note on guitar ( :-) because why not? )
+  5) By tail -f titles.txt you can look and see if new survey looks worth it...
+
+DEPENDENCIES:
+  1) sox? to play guitar chord?
+  2) Chrome (I'm sure firefox would work with greasemonkey as well?)
+    a) Tampermonkey extension
+  3) inotifywait (not sure what packages are called)
+
+INSTALL:
+  1) Install Chrome
+  2) Install Tampermonkey extension
+  3) Copy and paste "monkey_script.txt" into a new Tampermonkey script in Chrome Tampermonkey extension interface
+
+RUN (from inside directory where you cloned/copied these scripts):
+  1) Open 3 tabs in TERMINAL
+    a) TAB1: run "./qServer.py"
+    b) TAB2: run "tail -f ./titles.txt"
+    b) TAB3: run "./watcher.sh"
+  2) Open (and keep open) a tab with http://www.reddit.com/r/HITsWorthTurkingFor/new/?sort=new in it:
+    Note: this will refresh and MUST be left open for parsing to occur
+
+TODO:
+  -) Start everything from one script
+  -) Parse everything to a web server that "dings" instead so each user doesn't have to have local server
